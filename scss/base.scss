@@ -1,0 +1,110 @@
+@import "utils/variables";
+
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    max-width: 1198px;
+    background-color: $color-2;
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
+
+  .main {
+    background-color: $color-1;
+    margin: 0 auto;
+    font-weight: 700;
+
+    &__text {
+      color: $color-2;
+      padding-left: 80px;
+      margin: 0 0 30px 0;
+      font-family: $font-family-2;
+    }
+
+    &__text--title {
+      padding-top: 40px;
+      font-size: 120px;
+      font-weight: 500;
+
+      &:first-letter {
+        color: $color-3;
+      }
+    }
+
+    &__text--word {
+      font-size: 16px;
+      font-weight: 300;
+
+      &:first-letter {
+        color: $color-3;
+      }
+    }
+
+    &__text--link {
+      color: $color-3;
+      text-decoration: none;
+      font-weight: 300;
+      transition: 0.2s;
+      padding-bottom: 20px;
+
+      &:hover {
+        color: $color-2;
+      }
+    }
+  }
+
+  .head {
+    font-family: $font-family;
+    padding-bottom: 400px;
+    background: url("../img/head.png") top/cover no-repeat;
+
+    &__title {
+      color: $color-2;
+      font-size: 35px;
+      padding: 50px 46px;
+    }
+
+    &__color {
+      color: $color-3;
+    }
+
+    &__menu {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      list-style-type: none;
+      margin-left: 30px;
+
+      &:nth-child(1) {
+        margin-left: 46px;
+      }
+    }
+
+    &__link {
+      color: $color-3;
+      text-decoration: none;
+      font-weight: 400;
+      transition: 0.2s;
+
+      &:hover {
+        color: $color-2;
+      }
+    }
+  }
+

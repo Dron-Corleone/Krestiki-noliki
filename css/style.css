@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1198px;
+  background-color: #ffffff;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.main {
+  background-color: #222222;
+  margin: 0 auto;
+  font-weight: 700;
+}
+.main__text {
+  color: #ffffff;
+  padding-left: 80px;
+  margin: 0 0 30px 0;
+  font-family: "Myriad Pro Light";
+}
+.main__text--title {
+  padding-top: 40px;
+  font-size: 120px;
+  font-weight: 500;
+}
+.main__text--title:first-letter {
+  color: #ffc600;
+}
+.main__text--word {
+  font-size: 16px;
+  font-weight: 300;
+}
+.main__text--word:first-letter {
+  color: #ffc600;
+}
+.main__text--link {
+  color: #ffc600;
+  text-decoration: none;
+  font-weight: 300;
+  transition: 0.2s;
+  padding-bottom: 20px;
+}
+.main__text--link:hover {
+  color: #ffffff;
+}
+
+.head {
+  font-family: myriad-pro, sans-serif;
+  padding-bottom: 400px;
+  background: url("../img/head.png") top/cover no-repeat;
+}
+.head__title {
+  color: #ffffff;
+  font-size: 35px;
+  padding: 50px 46px;
+}
+.head__color {
+  color: #ffc600;
+}
+.head__menu {
+  margin: 0;
+  padding: 0;
+}
+.head__list {
+  display: flex;
+}
+.head__item {
+  list-style-type: none;
+  margin-left: 30px;
+}
+.head__item:nth-child(1) {
+  margin-left: 46px;
+}
+.head__link {
+  color: #ffc600;
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.2s;
+}
+.head__link:hover {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
