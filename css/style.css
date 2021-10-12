@@ -20,6 +20,9 @@ body {
   background-color: #222222;
   margin: 0 auto;
   font-weight: 700;
+  width: 100%;
+  background-size: cover;
+  transition: all 0.2s ease;
 }
 .main__text {
   color: #ffffff;
@@ -88,6 +91,112 @@ body {
 }
 .head__link:hover {
   color: #ffffff;
+}
+.head__game {
+  position: absolute;
+  margin-left: 530px;
+  margin-top: 40px;
+  text-align: center;
+}
+.head input[type=checkbox] {
+  display: none;
+}
+.head__popup {
+  display: none;
+  width: 400px;
+  height: 200px;
+  background: #ffffff;
+  position: absolute;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.head label {
+  display: inline-block;
+  color: #222222;
+  font-weight: 400;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+input:checked ~ .head__popup {
+  display: block;
+  background: white;
+  width: 360px;
+  height: 270px;
+  margin: 10px 0 0 -110px;
+}
+
+.inner {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #333;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 3px 4px 1px 2px rgba(1, 1, 1, 0.1);
+  text-shadow: 2px 3px 1px rgba(1, 1, 1, 0.3);
+  user-select: none;
+}
+
+table {
+  margin-top: 15px;
+}
+
+#win_block {
+  display: none;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+#win_block .again {
+  font-weight: bold;
+  cursor: pointer;
+  color: #369;
+  border-bottom: 1px solid #369;
+}
+
+#win_block .again:hover {
+  border-color: transparent;
+}
+
+#game {
+  position: relative;
+}
+
+#game .table {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+
+#game .table .winning {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 200, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#game table tr:first-child div {
+  margin-top: 0;
+}
+
+#game table tr:last-child div {
+  margin-bottom: 0;
+}
+
+#game table tr td:first-child div {
+  margin-left: 0;
+}
+
+#game table tr td:last-child div {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
